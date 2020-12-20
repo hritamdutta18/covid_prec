@@ -1,0 +1,21 @@
+#header-nav{
+    background-image: url('../images/navbar\ image.jpg');
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position: top;
+    margin: 1vw;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.navbar-default .navbar-brand{
+    font-size: 3.5vw;
+    font-family: Roboto;
+    font-weight: 700;
+    margin: 2vw;
+    color: rgb(255, 255, 255);
+    padding: 1vw;
+}
+
+.navbar-default .navbar-brand:hover{
+    color: rgb(255, 255, 255);
+}
