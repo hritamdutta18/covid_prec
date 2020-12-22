@@ -3,11 +3,14 @@
 <head>	
     <meta charset="UTF-8">
     <meta name= "viewport" content= "width= device-width, initial-scale= 1">
-	<title>CoviPrec</title>
+    <title>CoviPrec</title>
+    <link href='https://fonts.googleapis.com/css?family=Merienda One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ledger' rel='stylesheet'>
 	<link rel="stylesheet" href= "css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">    
-    <link rel= "icon" type= "image/png" href= "images/covid favicon.png"/>
+    <link rel= "icon" type= "image/png" href= "images/covid favicon.png"/>    
 </head>
+
 <body>
     <nav id= "header-nav" class= "navbar navbar-default">
         <div class="container">
@@ -18,43 +21,51 @@
     <br>
     <div id= "intro"><h1>Owner</h1>Hello there. My name is Hritam Dutta, a 2nd year CSE student from VIT Vellore. This website is my brainchild. Hope you like it !</div>
     <br>
+    <div id= "non-contact">
     <div id= "prec-list">
         <h1>COVID-19 Precautions</h1>
          <ul>
             <li>
                 <img src="images/Precautions/wash hands.jpg" alt= "Wash Hands">
+                <div class= "text">
                 <h3>Wash Hands</h3>
-                <p>Clean your hands often. Use soap and water, or an alcohol-based hand rub.</p>                
+                <p>Clean your hands often. Use soap and water, or an alcohol-based hand rub.</p></div>               
             </li>
             <li>
                 <img src="images/Precautions/safe distance.png" alt= "Social Distancing">
+                <div class= "text">
                 <h3>Social Distancing</h3>
-                <p>Maintain a safe distance from anyone who is coughing or sneezing.</p>                
+                <p>Maintain a safe distance from anyone who is coughing or sneezing.</p></div>                
             </li>
             <li>
                 <img src="images/Precautions/wear mask.jpg" alt= "Wear Mask">
+                <div class= "text">
                 <h3>Wear Mask</h3>
-                <p>Wear a mask when physical distancing is not possible.</p>
+                <p>Wear a mask when physical distancing is not possible.</p></div>
             </li>
             <li>                
                 <img src="images/Precautions/no touching.jpg" alt= "No Touching">
+                <div class= "text">
                 <h3>No Touching</h3>
-                <p>Don’t touch your eyes, nose or mouth.</p>
+                <p>Don’t touch your eyes, nose or mouth.</p></div>
             </li>
              <li>
                 <img src="images/Precautions/cover mouth.jpg" alt= "Cover mouth/nose while sneezing/coughing">
+                <div class= "text">
                 <h3>Cover while sneezing/coughing</h3>
-                <p>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</p>                
+                <p>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</p> </div>               
             </li>
             <li>
                 <img src="images/Precautions/stay home.jpg" alt= "Stay Home">
+                <div class= "text">
                 <h3>Stay Home</h3>
-                <p>Stay home if you feel unwell.</p>                
+                <p>Stay home if you feel unwell.</p></div>                
             </li>
             <li>
                 <img src="images/Precautions/seek medical help.jpg" alt= "Seek Medical Help">
+                <div class= "text">
                 <h3>Seek Medical Help</h3>
-                <p>If you have a fever, cough or difficulty in breathing, seek medical attention. A right health facility protects you, and prevents the spread of viruses & other infections.</p>
+                <p>If you have a fever, cough or difficulty in breathing, seek medical attention. A right health facility protects you, and prevents the spread of viruses & other infections.</p></div>
             </li>
         </ul>
     </div>
@@ -67,21 +78,33 @@
         <a href="https://www.the-scientist.com/news-opinion/immunity-to-sars-cov-2-lasts-at-least-six-months-data-show-68179" target= "_blank_">Immunity to SARS-CoV-2 Lasts at Least Six Months, Data Show</a><br/>
         <a href="https://www.the-scientist.com/news-opinion/covid-19-research-biased-toward-only-a-handful-of-genes-68186" target= "_blank_">COVID-19 Research Biased Toward Only a Handful of Genes</a><br/>
     </div>  
+    </div>
     <section id= "contact">
         <form>
             <fieldset>
                 <legend>Contact Details</legend>
-                <label for="name">Name</label><br/>            
-                <input type="text" id= "name" name= "name" required><br/>    
-                <label>Email</label><br/>
-                <input type= "email" name= "email" placeholder="abc@xyz.com" required><br/>
-                <label for="phone">Phone No.</label><br/>
-                <input type="tel" id="phone" name= "phone" pattern= "[0-9]{10}" placeholder="1234567890" required><br/>
+                <div class="row mb-3">
+                    <label for="name" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                      <input type="name" class="form-control" id="name" name= "name" required>
+                    </div>
+                </div><br>
+                <div class="row mb-3">
+                    <label for="email" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="email" placeholder="abc@xyz.com" required>
+                </div><br>
+                <br><div class="row mb-3">
+                    <label for="phone" class="col-sm-2 col-form-label">Phone No.</label>
+                    <div class="col-sm-10">
+                      <input type="tel" class="form-control" id="phone" name= "phone" pattern= "[0-9]{10}" placeholder="1234567890" required>
+                    </div>
+                </div><br>
             </fieldset>
-            <br/><input type="submit" value="Submit"/>
+            <br><button type="submit" class="btn btn-primary">Submit</button>
         </form>
-
     </section>
+
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>	
     <script src="js/pagejs.js"></script>	

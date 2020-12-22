@@ -1,11 +1,14 @@
 /* ********************* Full Document Styles ********************* */
+*{
+    box-sizing: border-box;
+    color: #000000;
+}
 
 body {
     background: linear-gradient(0deg, #91928d, #d8dad6, #eaeeeb, #ffffff);
 	background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     background-repeat: no-repeat;
-    
 }
 
 @keyframes gradient {
@@ -20,28 +23,43 @@ body {
     }
 }
 
+h1, legend{
+    font-family: 'Ledger';
+    text-shadow: 1px 1px 1px rgb(51, 51, 51);
+    color: #000000;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 /* ********************* Navbar Styles ********************* */
 
-.container{
-    margin: 0;
+#header-nav{
     background-image: url('../images/navbar\ image.jpg');
+    background-color: rgb(216, 238, 236);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 99vw;
     opacity: 0.8;
     width: 100%;
-    height: 20vh;
+    height: 20vmin;
     border-bottom: 3px solid rgb(11, 8, 116);
 }
 
+.container{
+    padding: 1rem 4rem;    
+    width: 100%;
+    height: 20vh;
+    margin-left: 10vmin;
+}
+
 .navbar-default .navbar-brand{
-    font-size: 5em;
+    font-size: 12vmin;
     font-family: Roboto;
     font-weight: 700;
-    margin: 15px 10px;
+    margin: 1.5vw;
     color: rgb(11, 8, 116);
-    padding: 10px;
-    text-shadow: 1px 1px 1px #222;
+    padding: 1vh;
+    text-shadow: 2px 2px 2px #222;
     line-height: 0.9;
 }
 
@@ -53,55 +71,64 @@ body {
 
 #logo img{
     float: left;
-    margin: 2%;
-    width: 5%;
-    height: 10%;
+    margin: 2rem;
+    width: 15vmin;
+    height: 15vmin;
+    padding: 2rem;
     line-height: 0.75;
 }
 #logo img:hover{
-    width: 6%;
+    width: 17vmin;
     height: 16%;
     float: left;
-    margin: 0.5%;
-    line-height: 0.65;
+    padding: 1rem;
+    line-height: 0.75;
 }
 
 /* ********************* Precautions List Styles ********************* */
 
 ul{
     list-style: none;
-    width: 60%;
-    display: inline-block;
+    width: 50vmax;
+    float: left;
 }
 
 li{
     margin: 0 auto;
-    height: 200px;
+    height: 150px;
     margin: 30px 0;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #ffffff;
+    overflow: hidden;
 }
 
-li p{
-    width: 450px;
+#intro, li p{
+    width: 100%;
+    margin: 0;
+    overflow-y: hidden;
+    margin: 1rem 0;
+    font-size: 1.5rem;
 }/* ********* Info ********* */
 
 li img{
-    width: 330px;
-    height: 200px;
+    width: 25%;
+    height: 100%;
 }/* ********* Image ********* */
 
 li h3{
     font-family: Roboto;
     font-style: italic;
     font-weight: bold;
+    margin: 0;
 }/* ********* Heading ********** */
 
-li h3, li p{
+.text{
+    width: 70%;
+    height: 100%;
     position: relative;
-    top: -200px;
-    left: 370px;
+    float: right;
+    padding: 2%;
 }
 
 #prec-list{
