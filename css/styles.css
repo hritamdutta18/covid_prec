@@ -6,9 +6,10 @@
 
 body {
     background: linear-gradient(0deg, #91928d, #d8dad6, #eaeeeb, #ffffff);
-	background-size: 400% 400%;
+	background-size: 100% 100%;
     animation: gradient 10s ease infinite;
     background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 @keyframes gradient {
@@ -23,12 +24,29 @@ body {
     }
 }
 
-h1, legend{
-    font-family: 'Ledger';
+/* ********************* Heading & Intro Styles ********************* */
+
+h2, legend{
+    font-family: Roboto;
     text-shadow: 1px 1px 1px rgb(51, 51, 51);
     color: #000000;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 700;
+    margin: 2rem;
+}
+
+/* #intro{
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #ffffff;
+    overflow: hidden;
+} */
+
+#intro p{
+    font-style: italic;
+    font-weight: 600;
+    margin: 1rem;
+    padding: 2rem;
 }
 
 /* ********************* Navbar Styles ********************* */
@@ -46,10 +64,8 @@ h1, legend{
 }
 
 .container{
-    padding: 1rem 4rem;    
-    width: 100%;
+    padding: 1rem 2rem;    
     height: 20vh;
-    margin-left: 10vmin;
 }
 
 .navbar-default .navbar-brand{
@@ -87,13 +103,13 @@ h1, legend{
 
 /* ********************* Precautions List Styles ********************* */
 
-ul{
+#prec-list ul{
     list-style: none;
     width: 50vmax;
     float: left;
 }
 
-li{
+#prec-list li{
     margin: 0 auto;
     height: 150px;
     margin: 30px 0;
@@ -112,7 +128,7 @@ li{
 }/* ********* Info ********* */
 
 li img{
-    width: 25%;
+    width: 30%;
     height: 100%;
 }/* ********* Image ********* */
 
@@ -131,17 +147,43 @@ li h3{
     padding: 2%;
 }
 
-#prec-list{
+/* ********************* COVID Articles Styles ********************* */
+
+#articles, form{
     position: relative;
+    float: left;    
+    width: 30%;
+    margin: 2rem 5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 1rem;
 }
 
-/* ********************* COVID Artciles Styles ********************* */
+#articles ul{
+    list-style-type: none;
+    padding-left: 3rem;
+}
 
-#articles{
-    position: absolute;
-    float: right;
-    top: 70%;
-    left: 65%;
+#articles li{
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+#articles ul li::before {
+    content: "\f35a";
+    font-family: "Font Awesome 5 Free";
+    padding: 0 10px 10px 0;
+}
+
+#articles a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+#articles a:hover{
+    font-size: 1.62rem;
 }
 
 /* ********************* Contact Section Styles ********************* */
@@ -151,15 +193,61 @@ input[type=text]:focus {
     border: 3px solid #555;
 }
 
+.row{
+    margin-bottom: 2rem;
+}
+
+button{
+    margin: 1rem;
+}
+
+form{
+    padding: 2rem;
+}
+
+#success{
+    display: none;
+    float: right;
+    left: 40%;
+    width: 35%;
+    margin: 0 10rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    padding: 1rem;
+}
 /* ********************* Responsive Styles ********************* */
 
-@media (min-width: 992px){
-						
-    }
-    
 @media (min-width: 768px) and (max-width: 991px){
-	
+	#prec-list ul{
+        list-style: none;
+        width: 100%;
     }
+
+    #prec-list li{
+        margin: 0 auto;
+        height: 150px;
+        margin: 30px 0;
+        width: 90%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+
+    #articles, form{    
+        width: 80%;
+        margin: 3rem 0 3rem 5rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #ffffff;
+        overflow: hidden;
+        padding: 1rem;
+    }
+
+    .row{
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
+}
     
 @media (max-width: 767px){
 		
