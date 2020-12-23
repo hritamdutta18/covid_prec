@@ -72,11 +72,11 @@ h2, legend{
     font-size: 12vmin;
     font-family: Roboto;
     font-weight: 700;
-    margin: 1.5vw;
+    margin: 1.5rem;
     color: rgb(11, 8, 116);
-    padding: 1vh;
+    /* padding: 1rem; */
     text-shadow: 2px 2px 2px #222;
-    line-height: 0.9;
+    
 }
 
 .navbar-default .navbar-brand:hover{
@@ -110,9 +110,9 @@ h2, legend{
 }
 
 #prec-list li{
-    margin: 0 auto;
     height: 150px;
-    margin: 30px 0;
+    margin: 0 auto;
+    margin-bottom: 30px;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #ffffff;
@@ -132,7 +132,7 @@ li img{
     height: 100%;
 }/* ********* Image ********* */
 
-li h3{
+li h4{
     font-family: Roboto;
     font-style: italic;
     font-weight: bold;
@@ -218,15 +218,32 @@ form{
 /* ********************* Responsive Styles ********************* */
 
 @media (min-width: 768px) and (max-width: 991px){
+
+    #logo img{
+        float: left;
+        margin: 0 2rem;
+        width: 15vmin;
+        height: 15vmin;
+        padding: 2rem;
+        line-height: 0.75;
+    }
+
+    #logo img:hover{
+        width: 16vmin;
+        height: 16vmin;
+        padding: 1rem;
+    }
+
 	#prec-list ul{
         list-style: none;
         width: 100%;
+        padding: 0;
     }
 
     #prec-list li{
-        margin: 0 auto;
         height: 150px;
-        margin: 30px 0;
+        margin: 0 auto;
+        margin-bottom: 30px;
         width: 90%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: #ffffff;
@@ -235,7 +252,7 @@ form{
 
     #articles, form{    
         width: 80%;
-        margin: 3rem 0 3rem 5rem;
+        margin: 3rem 7rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: #ffffff;
         overflow: hidden;
@@ -246,9 +263,65 @@ form{
         margin-bottom: 2rem;
         padding: 1rem;
     }
-
 }
     
 @media (max-width: 767px){
-		
-	}
+
+    .container{
+        padding: 1rem 2rem;    
+        height: 20vw;
+    }
+
+    #logo img{
+        display: none;
+    }
+    
+    .navbar-default .navbar-brand{
+        font-size: 12vmin;
+        font-family: Roboto;
+        font-weight: 700;
+        margin: 0;
+        color: rgb(11, 8, 116);
+        text-shadow: 2px 2px 2px #222;        
+    }
+
+    #prec-list ul{
+        list-style: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    #prec-list li{
+        height: 150px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 90%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+
+    #articles, form{    
+        width: 90%;
+        margin: 1.9rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: #ffffff;
+        overflow: hidden;
+        padding: 1rem;
+    }
+
+    .row{
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+    
+    #articles ul{
+        list-style-type: none;
+        padding: 0;
+    }
+
+    legend{
+        margin: 0 auto;
+        text-align: center;
+    }
+}
