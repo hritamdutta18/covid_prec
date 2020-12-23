@@ -292,18 +292,45 @@ form{
     }
 
     #prec-list li{
-        height: 150px;
+        height: 40%;
         margin: 0 auto;
         margin-bottom: 30px;
-        width: 90%;
+        width: 80%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: #ffffff;
         overflow: hidden;
     }
 
+    li p{
+        width: 100%;
+        overflow-y: hidden;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }/* ********* Info ********* */
+    
+    li img{
+        width: 100%;
+        height: 100%;
+    }/* ********* Image ********* */
+    
+    li h4{
+        display: block;
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: bold;
+        margin: 0;
+    }/* ********* Heading ********** */
+
+    .text{
+        position: relative;
+        float: left;
+        padding: 2rem;
+        width: 100%;
+    }
+    
     #articles, form{    
-        width: 90%;
-        margin: 1.9rem;
+        width: 80%;
+        margin: 3.5rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         background-color: #ffffff;
         overflow: hidden;
