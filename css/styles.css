@@ -77,8 +77,8 @@ h2, legend{
 }
 
 .navbar-brand img{
-    width: 5rem;
-    height: 5rem;
+    width: 6vmin;
+    height: 6vmin;
     display: inline-block;
     border-radius: 6rem;
 }
@@ -88,15 +88,15 @@ h2, legend{
 #logo img{
     float: left;
     margin: 0;
-    width: 12rem;
-    height: 13rem;
+    width: 16vmin;
+    height: 17vmin;
     padding: 2rem;
 }
 
 #logo img:hover{
-    width: 12.25rem;
-    height: 13.25rem;
-    padding: 1.5rem;
+    width: 16.5vmin;
+    height: 17.5vmin;
+    padding: 1rem;
 }
 
 /* ********************* Precautions List Styles ********************* */
@@ -209,10 +209,9 @@ form{
 
 #success{
     display: none;
-    float: right;
-    left: 40%;
-    width: 35%;
-    margin: 0 10rem;
+    float: right;    
+    width: 30%;
+    margin: 0 5rem 5rem 5rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     overflow: hidden;
     padding: 1rem;
@@ -233,14 +232,15 @@ form{
     }
 
     #logo img{
-        width: 10rem;
-        height: 11rem;
-        padding: 1.5rem;
+        margin-top: 1rem;
+        width: 14vmin;
+        height: 15vmin;
+        padding: 1.5rem; 
     }
 
     #logo img:hover{
-        width: 10.25rem;
-        height: 11.25rem;
+        width: 14.5vmin;
+        height: 15.5vmin;
         padding: 1rem;
     }
     
@@ -297,6 +297,12 @@ form{
     #contact, #non-contact{
         margin: 5rem 0;
     }
+
+    #success{
+        float: none;    
+        width: 80%;
+        margin: auto;
+    }
 }
 
 @media (min-width: 568px) and (max-width: 799px){
@@ -312,14 +318,15 @@ form{
     }
 
     #logo img{
-        width: 8rem;
-        height: 9rem;
+        margin-top: 1rem;
+        width: 11vmin;
+        height: 12vmin;
         padding: 1rem;
     }
 
     #logo img:hover{
-        width: 8.25rem;
-        height: 9.25rem;
+        width: 11.5vmin;
+        height: 12s.5vmin;
         padding: 0.5rem;
     }
     
@@ -341,7 +348,7 @@ form{
         padding: 0;
     }
 
-    #articles, form{    
+    #articles, #success, form{    
         width: 90%;
         float: none;
         margin: auto;
@@ -397,7 +404,7 @@ form{
         width: 100%;
     }
     
-    #articles, form{    
+    #articles, #success, form{    
         width: 80%;
         float: none;
         margin: auto;
