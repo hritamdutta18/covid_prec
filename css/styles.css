@@ -318,15 +318,14 @@ form{
     }
 
     #logo img{
-        margin-top: 1rem;
-        width: 11vmin;
-        height: 12vmin;
+        width: 11vmax;
+        height: 12vmax;
         padding: 1rem;
     }
 
     #logo img:hover{
-        width: 11.5vmin;
-        height: 12s.5vmin;
+        width: 11.5vmax;
+        height: 12.5vmax;
         padding: 0.5rem;
     }
     
