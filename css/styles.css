@@ -67,12 +67,18 @@ h2, legend{
     font-weight: 700;
     margin: 1.5rem;
     color: rgb(11, 8, 116);
-    text-shadow: 2px 2px 2px #222;
-    
+    text-shadow: 2px 2px 2px #222;    
 }
 
 .navbar-default .navbar-brand:hover{
     color: rgb(11, 8, 116);
+}
+
+.navbar-brand img{
+    width: 5rem;
+    height: 5rem;
+    display: inline-block;
+    border-radius: 6rem;
 }
 
 /* ********************* Logo Styles ********************* */
@@ -209,44 +215,150 @@ form{
 }
 /* ********************* Responsive Styles ********************* */
 
-@media (min-width: 568px) and (max-width: 991px){
+@media (min-width: 800px) and (max-width: 1199px){
+    .container{    
+        height: 20vw;
+        margin: 0;
+    }
+
+    .navbar-default .navbar-brand{
+        margin: 0;
+        line-height: 1.2;
+    }
 
     #logo img{
-        float: left;
-        margin: 0 2rem;
-        width: 15vmin;
+        margin: 0;
+        width: 17vmin;
         height: 15vmin;
-        padding: 2rem;
-        line-height: 0.75;
+        padding: 1rem 1.5rem;
+        line-height: 0.6;
     }
 
     #logo img:hover{
-        width: 16vmin;
-        height: 16vmin;
+        width: 17.5vmin;
+        height: 15.5vmin;
+        padding: 0.5rem 1rem;
+        line-height: 0.45;
     }
-
+    
 	#prec-list ul{
         width: 100%;
         padding: 0;
+        margin-bottom: 2rem;
     }
 
     #prec-list li{
         width: 90%;
     }
+    
+    #articles{
+        padding: 2rem;
+    }
 
-    #articles, form{    
+    #articles ul{
+        padding: 0;
+    }
+
+    #articles li{
+        width: 47%;
+    }
+    #articles li:nth-child(odd){
+        float: left;
+    }
+
+    #articles li:nth-child(even){
+        float: right;
+    }
+
+    #articles{    
+        width: 90%;
+        float: none;
+        margin: auto;
+    }
+
+    form{
         width: 80%;
-        margin: 3rem 6rem;
+        float: none;
+        margin: auto;
     }
 
     .row{
         padding: 1rem;
     }
 
-    legend{
-        margin: 1rem;
+    #articles h2, legend{
+        margin: 0 auto;
         text-align: left;
     }    
+
+    #contact, #non-contact{
+        margin: 5rem 0;
+    }
+}
+
+@media (min-width: 568px) and (max-width: 799px){
+
+    .navbar-brand img{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .navbar-default .navbar-brand{
+        margin: 0;
+        line-height: 0.7;
+    }
+
+    #logo img{
+        margin: 0;
+        width: 17vmin;
+        height: 15vmin;
+        padding: 1rem 1.5rem;
+        line-height: 0.6;
+    }
+
+    #logo img:hover{
+        width: 17.5vmin;
+        height: 15.5vmin;
+        padding: 0.5rem 1rem;
+        line-height: 0.45;
+    }
+    
+	#prec-list ul{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    #prec-list li{
+        width: 90%;
+    }
+    
+    #articles{
+        padding: 2rem;
+    }
+
+    #articles ul{
+        padding: 0;
+    }
+
+    #articles, form{    
+        width: 90%;
+        float: none;
+        margin: auto;
+    }
+
+    .row{
+        padding: 1rem;
+    }
+
+    #articles h2, legend{
+        margin: 0 auto;
+        text-align: left;
+    }    
+
+    #contact, #non-contact{
+        margin: 5rem 0;
+    }
 }
     
 @media (max-width: 567px){
@@ -255,12 +367,18 @@ form{
         height: 20vw;
     }
 
+    .navbar-brand img{
+        width: 3rem;
+        height: 3rem;
+    }
+
     #logo img{
         display: none;
     }
     
     .navbar-default .navbar-brand{
-        margin: 0;       
+        margin: 0;
+        line-height: 0.7;
     }
 
     #prec-list ul{
@@ -285,7 +403,12 @@ form{
     
     #articles, form{    
         width: 80%;
-        float: center;
+        float: none;
+        margin: auto;
+    }
+
+    #contact, #non-contact{
+        margin-bottom: 4rem;
     }
 
     .row{
