@@ -49,7 +49,7 @@ h2, legend{
     background-color: rgb(216, 238, 236);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 99vw;
+    background-size: 100%;
     opacity: 0.8;
     width: 100%;
     height: 20vmin;
@@ -57,8 +57,9 @@ h2, legend{
 }
 
 .container{
+    margin: 0;
     padding: 1rem 2rem;    
-    height: 20vh;
+    height: 100%;
 }
 
 .navbar-default .navbar-brand{
@@ -67,7 +68,8 @@ h2, legend{
     font-weight: 700;
     margin: 1.5rem;
     color: rgb(11, 8, 116);
-    text-shadow: 2px 2px 2px #222;    
+    text-shadow: 2px 2px 2px #222;   
+    line-height: 0.9; 
 }
 
 .navbar-default .navbar-brand:hover{
@@ -85,25 +87,23 @@ h2, legend{
 
 #logo img{
     float: left;
-    margin: 2rem;
-    width: 15vmin;
-    height: 15vmin;
+    margin: 0;
+    width: 12rem;
+    height: 13rem;
     padding: 2rem;
-    line-height: 0.75;
 }
+
 #logo img:hover{
-    width: 17vmin;
-    height: 16%;
-    float: left;
-    padding: 1rem;
-    line-height: 0.75;
+    width: 12.25rem;
+    height: 13.25rem;
+    padding: 1.5rem;
 }
 
 /* ********************* Precautions List Styles ********************* */
 
 #prec-list ul{
     list-style: none;
-    width: 50vmax;
+    width: 60%;
     float: left;
 }
 
@@ -148,19 +148,23 @@ li h4{
 /* ********************* COVID Articles Styles ********************* */
 
 #articles, form{
-    position: relative;
-    float: left;    
+    float: right;    
     width: 30%;
-    margin: 2rem 5rem;
+    margin: 0 5rem 5rem 5rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #ffffff;
     overflow: hidden;
-    padding: 1rem;
+    padding: 2rem;
+}
+
+#articles h2, legend{
+    margin: 0 auto;
+    text-align: left;
 }
 
 #articles ul{
     list-style-type: none;
-    padding-left: 3rem;
+    padding-left: 1rem;
 }
 
 #articles li{
@@ -196,7 +200,7 @@ input[type=text]:focus {
 }
 
 button{
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 form{
@@ -213,9 +217,11 @@ form{
     overflow: hidden;
     padding: 1rem;
 }
+
 /* ********************* Responsive Styles ********************* */
 
 @media (min-width: 800px) and (max-width: 1199px){
+
     .container{    
         height: 20vw;
         margin: 0;
@@ -227,18 +233,15 @@ form{
     }
 
     #logo img{
-        margin: 0;
-        width: 17vmin;
-        height: 15vmin;
-        padding: 1rem 1.5rem;
-        line-height: 0.6;
+        width: 10rem;
+        height: 11rem;
+        padding: 1.5rem;
     }
 
     #logo img:hover{
-        width: 17.5vmin;
-        height: 15.5vmin;
-        padding: 0.5rem 1rem;
-        line-height: 0.45;
+        width: 10.25rem;
+        height: 11.25rem;
+        padding: 1rem;
     }
     
 	#prec-list ul{
@@ -309,18 +312,15 @@ form{
     }
 
     #logo img{
-        margin: 0;
-        width: 17vmin;
-        height: 15vmin;
-        padding: 1rem 1.5rem;
-        line-height: 0.6;
+        width: 8rem;
+        height: 9rem;
+        padding: 1rem;
     }
 
     #logo img:hover{
-        width: 17.5vmin;
-        height: 15.5vmin;
-        padding: 0.5rem 1rem;
-        line-height: 0.45;
+        width: 8.25rem;
+        height: 9.25rem;
+        padding: 0.5rem;
     }
     
 	#prec-list ul{
@@ -362,10 +362,6 @@ form{
 }
     
 @media (max-width: 567px){
-
-    .container{    
-        height: 20vw;
-    }
 
     .navbar-brand img{
         width: 3rem;
