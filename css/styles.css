@@ -337,15 +337,23 @@ form{
     }
 }
 
-@media (min-width: 568px) and (max-width: 800px){
-
+@media (min-width: 568px) and (max-width: 800px) and (min-height: 568px){
+    
     #header-nav{
         height: 18vmin;
     }
 
+    .container button{
+        top: 40%;
+    }
+
     .navbar-brand img{
-        width: 4rem;
-        height: 4rem;
+        width: 7vmin;
+        height: 7vmin;
+    }
+
+    .navbar-default .navbar-brand{   
+        line-height: 0.2;   
     }
 
     #logo img{
@@ -395,22 +403,93 @@ form{
         margin: 5rem 0;
     }
 }
-    
-@media (max-width: 568px){
 
-    .container button{	
-        float: right;
-        margin: 0;
-        top: 30%;
+@media (max-height: 568px){
+    
+    #header-nav{
+        height: 20vmin;
     }
-        
+
+    .container button{
+        padding: 0.7rem;
+        top: 10%;
+    }
+    
     .navbar-toggle .icon-bar{
-        width: 17px;
+        width: 18px;
     }
 
     .navbar-brand img{
-        width: 6vmin;
-        height: 6vmin;
+        width: 7vmin;
+        height: 7vmin;
+    }
+
+    .navbar-default .navbar-brand{   
+        padding: 0 2rem;   
+    }
+
+    #logo img{
+        width: 12vmin;
+        height: 14vmin;
+        padding: 0.5rem;
+    }
+
+    #logo img:hover{
+        padding: 0;
+    }
+    
+	#prec-list ul{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    #prec-list li{
+        width: 90%;
+    }
+    
+    #articles{
+        padding: 2rem;
+    }
+
+    #articles ul{
+        padding: 0;
+    }
+
+    #articles, #success, form{    
+        width: 90%;
+        float: none;
+        margin: auto;
+    }
+
+    .row{
+        padding: 1rem;
+    }
+
+    #articles h2, legend{
+        margin: 0 auto;
+        text-align: left;
+    }    
+
+    #contact, #non-contact{
+        margin: 5rem 0;
+    }
+}
+
+@media (max-width: 568px){
+
+    .container button{
+        padding: 0.8rem;
+        top: 17%;
+    }
+        
+    .navbar-toggle .icon-bar{
+        width: 19px;
+    }
+
+    .navbar-brand img{
+        width: 7vmin;
+        height: 7vmin;
     }
 
     #logo img{
@@ -419,7 +498,8 @@ form{
     
     .navbar-default .navbar-brand{
         position: static;
-        line-height: 0.7;
+        padding: 1rem;
+        line-height: 0.4;
     }
 
     #prec-list ul{
