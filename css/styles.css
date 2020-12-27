@@ -24,6 +24,38 @@ body {
     }
 }
 
+/* ********************* Collapsable Menu Styles ********************* */
+
+.container button{	
+    float: right;
+    margin: 0;
+    top: 30%;
+}
+    
+.navbar-toggle .icon-bar{
+    border: 1px solid rgb(11, 8, 116);
+}
+
+.navbar-header button.navbar-toggle{
+    clear: both;
+}
+
+.navbar-collapse{
+    margin-top: 2px;    
+    width: 100%;
+	background-color: #ffffff;
+    text-align: center;					
+}
+
+#nav-list a{
+    font-family: 'Times New Roman', Times, serif;
+	color: rgb(11, 8, 116);
+	font-weight: 700;
+    font-size: 2rem;
+    background-color: #d4dad5;
+    margin-bottom: 1px;
+}
+
 /* ********************* Heading & Intro Styles ********************* */
 
 h2, legend{
@@ -63,13 +95,13 @@ h2, legend{
 }
 
 .navbar-default .navbar-brand{
+    position: relative;
+    top: 25%;
     font-size: 12vmin;
     font-family: Roboto;
     font-weight: 700;
-    margin: 1.5rem;
     color: rgb(11, 8, 116);
-    text-shadow: 2px 2px 2px #222;   
-    line-height: 0.9; 
+    text-shadow: 2px 2px 2px #222;        
 }
 
 .navbar-default .navbar-brand:hover{
@@ -88,14 +120,12 @@ h2, legend{
 #logo img{
     float: left;
     margin: 0;
-    width: 16vmin;
-    height: 17vmin;
+    width: 14vmin;
+    height: 16vmin;
     padding: 2rem;
 }
 
 #logo img:hover{
-    width: 16.5vmin;
-    height: 17.5vmin;
     padding: 1rem;
 }
 
@@ -219,29 +249,31 @@ form{
 
 /* ********************* Responsive Styles ********************* */
 
+@media (min-width: 768px){
+
+    #nav-list, .navbar-toggle{
+        display: none;
+    }
+}
+
 @media (min-width: 800px) and (max-width: 1199px){
 
-    .container{    
-        height: 20vw;
-        margin: 0;
+    #header-nav{
+        height: 19vmin;
     }
 
-    .navbar-default .navbar-brand{
-        margin: 0;
-        line-height: 1.2;
+    #nav-list, .navbar-toggle{
+        display: none;
     }
 
     #logo img{
-        margin-top: 1rem;
         width: 14vmin;
-        height: 15vmin;
-        padding: 1.5rem; 
+        height: 16vmin;
+        padding: 1.75rem; 
     }
 
     #logo img:hover{
-        width: 14.5vmin;
-        height: 15.5vmin;
-        padding: 1rem;
+        padding: 0.75rem;
     }
     
 	#prec-list ul{
@@ -305,28 +337,25 @@ form{
     }
 }
 
-@media (min-width: 568px) and (max-width: 799px){
+@media (min-width: 568px) and (max-width: 800px){
+
+    #header-nav{
+        height: 18vmin;
+    }
 
     .navbar-brand img{
         width: 4rem;
         height: 4rem;
     }
 
-    .navbar-default .navbar-brand{
-        margin: 0;
-        line-height: 0.7;
-    }
-
     #logo img{
-        width: 11vmax;
-        height: 12vmax;
+        width: 12vmin;
+        height: 14vmin;
         padding: 1rem;
     }
 
     #logo img:hover{
-        width: 11.5vmax;
-        height: 12.5vmax;
-        padding: 0.5rem;
+        padding: 0;
     }
     
 	#prec-list ul{
@@ -367,11 +396,21 @@ form{
     }
 }
     
-@media (max-width: 567px){
+@media (max-width: 568px){
+
+    .container button{	
+        float: right;
+        margin: 0;
+        top: 30%;
+    }
+        
+    .navbar-toggle .icon-bar{
+        width: 17px;
+    }
 
     .navbar-brand img{
-        width: 3rem;
-        height: 3rem;
+        width: 6vmin;
+        height: 6vmin;
     }
 
     #logo img{
@@ -379,7 +418,7 @@ form{
     }
     
     .navbar-default .navbar-brand{
-        margin: 0;
+        position: static;
         line-height: 0.7;
     }
 
