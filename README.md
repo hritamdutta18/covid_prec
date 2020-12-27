@@ -1,4 +1,4 @@
-[!Website Icon](https://github.com/hritamdutta18/covid_prec/tree/main/images/covid%20favicon.png?raw=true) 
+[!Website Icon](https://github.com/hritamdutta18/covid_prec/tree/main/images/covid%20favicon.png) 
 # CoviPrec
 
 It is a small website enlisting COVID-19 precautions, few of the top COVID-19 articles & a form for filling up the contact details.
